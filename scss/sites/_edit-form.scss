@@ -1,0 +1,26 @@
+#edit-main{
+    @include backgroun-main;
+}
+
+.edit-tittle{
+    @include header_section;
+}
+
+.edit-form{
+    @include section-form;
+
+    h1{
+        @include header_section;
+    }
+
+    @include admin-form;
+
+    a{
+        font-size: 18px;
+        padding: 5px 10px;
+        background-color: blue;
+        border-radius: 8px;
+        color: white;
+        text-decoration: none;
+    }
+}

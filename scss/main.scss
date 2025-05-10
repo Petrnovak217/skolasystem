@@ -1,0 +1,35 @@
+@import "global";
+@import "sites/header";
+@import "sites/home";
+@import "sites/footer";
+@import "sites/registration_form";
+@import "sites/sign_in";
+@import "sites/helpDesk";
+@import "sites/all_students";
+@import "sites/add-form";
+@import "sites/one-student-info";
+@import "sites/edit-form";
+@import "sites/delete";
+@import "sites/photos";
+@import "responsive";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+input:-webkit-autofill {
+    background-color: #222 !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgb(4 4 4) inset !important;
+}
+
+
+
+
+
+

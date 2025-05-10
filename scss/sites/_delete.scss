@@ -1,0 +1,43 @@
+#delete-main{
+    height: 100vh;
+}
+
+.delete-form{
+    margin-left: 10px;
+
+    p{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    button{
+        padding: 10px 16px ;
+        color: white;
+        border: 1px solid rgb(125, 8, 8);
+        border-radius: 10px;
+        background-color: rgba(121, 9, 9, 0.97);
+        margin-right: 15px;
+        cursor: pointer;
+
+        &:hover{
+            border: 1px solid red;
+            background-color: red;
+            @include transition;
+        }
+    }
+
+    a{
+        padding: 10px 16px ;
+        color: white;
+        border: 1px solid rgba(14, 50, 255, 0.73);
+        background-color: rgba(14, 50, 255, 0.799);
+        text-decoration: none;
+        border-radius: 10px;
+
+        &:hover{
+            border: 1px solid blue;
+            background-color: blue;
+            @include transition;
+        }
+    }
+}

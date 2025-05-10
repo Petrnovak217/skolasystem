@@ -1,0 +1,123 @@
+#all_student-body{
+    background: linear-gradient(rgba(0, 0, 0, 0.638),rgba(0, 0, 0, 0.819));
+    min-height: 100vh;
+    
+}
+
+#all-students-main{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%; 
+   
+    
+    h1{
+        @include header_section(white);
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px auto;
+   
+}
+
+.search{
+
+    input{
+        font-size: 12.5px;
+        padding: 13px;
+        border: 2px solid black;
+        border-radius: 12px;
+        outline: none;
+
+        &:focus{
+            border: 2px solid orangered;
+            transition: border 0.5s;
+        }
+    }
+}
+
+.sort_btns{
+    
+   
+    button{
+        width: em(150px);
+        text-align: center;
+        padding: 5px 15px;
+        margin: 0 8px;
+        border: 1px solid orangered;
+        background-color:rgba(255, 79, 3, 0.793) ;
+        box-shadow: 1px 1px 1px black;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+
+        &:hover{
+            background-color:orangered ;
+            @include transition;
+        }
+
+        &:focus{
+            box-shadow: none;
+            outline: none;
+            @include transition;
+
+        }
+
+    }
+}
+
+.asc-sort{
+    border-radius: 6px 1px 25px 6px;
+}
+
+.desc-sort{
+    border-radius: 25px 6px 6px 1px;
+}
+
+
+.one-student-box {
+    display: flex;
+    width: 280px; 
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;  
+}
+
+.one-student{
+    width: 280px;
+    height: 120px;
+    background-color:rgba(246, 226, 199, 0.932);
+    border-radius: 10px;
+  
+    /* linear-gradient( rgba(178, 111, 17, 0.614) ,rgba(142, 83, 12, 0.805)) */
+
+    li{
+        font-size: 22px;
+        padding:15px 0px;
+        list-style-type: none;
+        color: black;
+    }
+
+    a{
+        display: inline-block;
+        color: white;
+        margin: 0 auto;
+        text-decoration: none;
+        font-size: em(18px);
+        padding: 2px 12px;
+        background-color: rgba(88, 87, 87, 0.753);
+        border: 2px solid rgba(0, 0, 0, 0.37);
+        border-radius: 10px;
+
+        &:hover{
+            background-color: rgba(39, 39, 38, 0.847);
+            border: 2px solid rgb(20, 20, 19);
+            @include transition;
+        }
+    }
+}

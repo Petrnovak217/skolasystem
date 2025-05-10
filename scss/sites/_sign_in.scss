@@ -1,0 +1,75 @@
+#sign-in-main{
+    @include backgroun-main;
+}
+
+.sign-in-form{
+    @include section-form;
+    
+
+    h1{
+        @include header_section;
+    }
+
+    form{ 
+        width: 100%;
+        max-width: 450px;
+        margin: 0px auto;
+        text-align: center;
+        border: 2px solid orangered;
+        border-radius: 12px;
+        margin-bottom: 50px;
+        box-shadow: 2px 2px 25px 1px;
+        background-color: rgba(0, 0, 0, 0.404);
+        
+    
+        input{
+            width: 50%;
+            margin: em(10px)  0;
+            padding: em(8px);
+            font-size: em(15px);
+            
+
+            &.email, &.password{
+            outline: none; 
+            border: none;
+            border-bottom: 2px solid rgba(255, 68, 0, 0.482);
+            background-color: transparent;
+            margin-top: 20px;
+            color: white;
+            }
+            
+            &:focus{
+                width: 70%;
+                border-bottom: 2px solid orangered;
+                transition: width 0.5s;
+            }
+
+            &::placeholder{
+                color: rgb(255, 255, 255);
+            }
+
+        }
+
+    
+        input[type="submit"]{
+            width: 50%;
+            cursor: pointer;
+            font-size: em(18px);
+            border: 0;
+            margin-bottom: 5%;
+    
+            &:focus{
+                width: 50%;
+            }
+    
+            &:hover{
+                background-color: orangered;
+                color: white;
+                transition: background-color 0.5s,color 0.3s;
+                
+            }
+        }
+    }
+
+   
+}

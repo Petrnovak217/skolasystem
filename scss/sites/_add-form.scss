@@ -1,0 +1,23 @@
+#add-main{
+    @include backgroun-main;
+}
+
+
+.add-tittle{
+    @include header_section;
+}
+
+
+.add-form{
+    @include section-form; 
+ 
+    h1{
+        @include header_section;
+    }
+
+    @include admin-form;
+}
+
+
+
+

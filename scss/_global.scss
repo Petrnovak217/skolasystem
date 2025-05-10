@@ -1,0 +1,119 @@
+@function em($pixels, $basicValue: 16px){
+    @return calc($pixels / $basicValue) * 1em;
+}
+
+@mixin transition {
+    transition: all 0.5s;
+}
+
+@mixin header_section($color:white){
+    text-align: center;
+    font-size: em(30px);
+    margin: 25px 0;
+    color: $color;
+
+    &::after{
+        content: "";
+        width: em(100px);
+        display: block;
+        margin: 0 auto;
+        margin-top:em(5px) ;
+        border-bottom: 3px solid orangered;
+    }
+}
+
+@mixin backgroun-main{
+    background:linear-gradient(rgba(0, 0, 0, 0.679),rgba(0, 0, 0, 0.811)),
+    url("../img/school.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@mixin section-form{ 
+    height: 100vh;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+@mixin admin-form{
+
+    form{ 
+        text-align: center;
+        width: 100%;
+        max-width: 550px;
+        border: 1px solid rgb(248, 100, 2);
+        border-radius: 40px;
+        margin-bottom: 50px;
+        box-shadow:3px 2px 20px 4px;
+        background: rgba(0, 0, 0, 0.725);
+
+        label{
+            width: 15%;
+            display: inline-block;
+            padding: em(9px) em(10px) em(9px) 0;
+            color: black;
+            font-size: em(15px);
+            font-weight: 600;
+            color: white;
+        }
+
+        input,textarea,select{
+            width: 40%;
+            margin: em(20px)  20px;
+            padding: em(8px);
+            font-size: em(15px);
+            outline: none; 
+            border: none;
+            border-bottom: 2px solid rgb(9, 112, 196);
+            background-color: transparent;
+            color: white;
+    
+            &:focus{
+                width: 60%;
+                border-bottom: 2px solid orangered;
+                transition: width 0.5s;
+            }
+
+            &::placeholder{
+                color: rgb(255, 255, 255);
+            }
+        }
+
+        #college{
+            option{
+                background-color: black;
+            }
+        }
+  
+        input[type="submit"]{
+            width: 50%;
+            cursor: pointer;
+            font-size: em(18px);
+            border-radius: 6px;
+            border: 0;
+            
+    
+            &:focus{
+                width: 50%;
+            }
+    
+            &:hover{
+                background-color: orangered;
+                color: white;
+                transition: background-color 0.5s,color 0.3s;
+                
+            }
+        }
+    }
+
+
+}
+
