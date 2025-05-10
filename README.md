@@ -17,7 +17,9 @@ Tento projekt je aplikace vytvořená v jazyce PHP, s použitím HTML a CSS pro 
 1. Ujisti se, že máš nainstalovaný PHP server (např. [XAMPP](https://www.apachefriends.org/cz/index.html), [Laragon](https://laragon.org/), nebo použij `php -S localhost:8000`)
 2. Nakopíruj soubory projektu do `htdocs` (nebo jiné veřejné složky serveru)
 3. Otevři prohlížeč a jdi na `http://localhost/projektPHP` nebo podobnou adresu
-   nebo mužeš kouknout na moje portfolio (https://petrnovak217.eu/)
+4. jdi do classes/Connect a vypln přistup k tvoji databázi
+5. zkopíruj sql soubor
+   
 
 ## 🎯 Funkce
 
